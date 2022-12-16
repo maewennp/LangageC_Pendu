@@ -193,7 +193,7 @@ void CheckSuggestion() 													//procédure qui va permettre de checker si 
 	for( int i =0; i < indice; i++){ 									// boucle pour parcourir le tableau tant que l'indice i ne dépasse pas l'indice 'indice'
 		if (letter == tabUsedLetters[i]){								// si la lettre se retrouve dans le tableau des lettres déjà utilisées 
 			usedletter = 1;												// la variable usedletter change de valeur à 1. 
-			i++; 														// on icrémente l'indice i pour parcourir tout le tableau
+			i++; 														// on icrémente l'indice i une fois de plus pour parcourir les cases paires (j'aurais dû mettre i+2 au lieu de i++ dans le for
 		}
 	}
 	printf("Here's the letters already used : %s\n", tabUsedLetters);   // affiche après chaque tentative toutes les lettres déjà jouées par le joueur
